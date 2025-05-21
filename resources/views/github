@@ -3,3 +3,17 @@
 (3) git commit -m "first commit"
 (4) git remote add origin https://github.com/Akash456789/laravel_curd.git
 (5) git push origin HEAD:master
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+1. install xampp old version in a new folder
+2. change Ports->
+   (a) Apache (httpd.conf)-> 80 to 8080
+   (b) Apache (httpd-ssl.conf)-> 443 to 4443
+   (c) my.ini ->3306 to 3307
+
+3. ($cfg['Servers'][$i]['host'] = '127.0.0.1';) after this line add this line in the file location (xampp74->phpMyAdmin->config.inc) 
+  add this line->($cfg['Servers'][$i]['port'] = '3307';)      
+
+4. (Go To)--> Advanced system setting -> Advanced -> Environment Variables -> add path(C:\xampp74\php\)
